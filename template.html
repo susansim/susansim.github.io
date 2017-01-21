@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- THEMES MUST BE AFTER BOOTSTRAP CSS -->
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+   <!--  <link rel="stylesheet" type="text/css" href="theme5.css"> -->
+    <link rel="stylesheet" type="text/css" href="NEW THEME.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+/*    .container{border: 2px dotted green;}
+    .row{border: 1px dotted red;}
+    .row [class*=' col-']{border: 2px dotted purple;}*/
+    </style>
+    
+</head>
+<body>
+<!-- everything will be in this container -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="https://cdn.shopify.com/s/files/1/1626/3733/files/For_FB_Hello_Penang_logo.png?6872851615360722317" alt=logo" width=30px></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <!-- row 1: jumbotron -->
+    <div class="row">
+        <!-- full screen col -->
+        <div class="col-xs-12
+                col-sm-12
+                col-md-12
+                col-lg-12">  
+
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>...</p>
+                <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div> <!-- end of col -->
+    </div> <!-- end of row 1 -->
+
+    <!-- row 2: thumbnails -->
+    <div class="row">
+        <!-- col 1 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">  
+            <div class="thumbnail">
+                <img src="http://placehold.it/800x600" alt="">
+                <div class="caption">
+                    <h3>title</h3>
+                    <p>quick brown fox jumps over the lazy dog.</p>
+                    <a href="#" class="btn btn-default btn-sm">click</a>    
+                </div>
+            </div>          
+        </div> <!-- end of col 1 -->
+        <!-- col 2 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">  
+            <div class="thumbnail">
+                <img src="http://placehold.it/800x600" alt="">
+                <div class="caption">
+                <h3>title</h3>
+                <p>quick brown fox jumps over the lazy dog.</p>
+                <a href="#" class="btn btn-default btn-sm">click</a>    
+                </div>
+            </div>          
+        </div> <!-- end of col 2 -->
+        <!-- col 3 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">  
+            <div class="thumbnail">
+                <img src="http://placehold.it/800x600" alt="">
+                <div class="caption">
+                <h3>title</h3>
+                <p>quick brown fox jumps over the lazy dog.</p>
+                <a href="#" class="btn btn-default btn-sm">click</a>    
+                </div>
+            </div>          
+        </div> <!-- end of col 3 -->
+
+    </div> <!-- end of row 2 -->
+
+    <hr>
+
+    <!-- <div> row 3: video  -->
+    <div class="row">
+        <!-- full screen col     -->
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12">
+            <!-- responsive video -->
+            <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/GTXP2FzQS94"></iframe>
+            </div>
+        </div>
+    </div> <!-- end of col -->
+    <!-- </div>  -->
+    <!-- end of row 3 -->
+
+    <hr>
+
+    <div class="row"><!-- row 4: forms -->
+        <!-- half screen width -->
+        <div class="col-xs-12 
+                    col-sm-6 
+                    col-md-6 
+                    col-lg-6"> 
+
+            <form action="https://script.google.com/macros/s/AKfycbzp47k3uswXEg1afBPBBnQxMlxnvDYeTSwI8t0b1JxwBCaAAMmv/exec" method="post">
+
+                <legend>form title</legend>
+
+                <div class="form-group">
+                    <label for="userid">NAME</label>
+                   <input type="text"
+                    name="NAME"
+                    id="userid"
+                    class="form-control"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="email-id">EMAIL</label>
+                   <input type="email"
+                    name="EMAIL"
+                    id="email-id"
+                    class="form-control"> 
+                </div>
+
+                <div class="radio">
+                <label><input type="radio" name="gender" value="male">Male</label>
+
+                </div>
+                <div class="radio">
+                <label><input type="radio" name="gender" value="female">Female</label>
+
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary">
+                </div> 
+
+                <div class="checkbox">
+                    <label>
+                        <input  type="checkbox"
+                                name="PDPA"
+                                checked>
+                    </label>
+                </div>
+            </form>
+        </div>
+    <!-- end of left col -->
+
+<div class="col-xs-12
+            col-sm-6
+            col-md-6
+            col-lg-6
+            text-center">
+    <h1>MY TITLE</h1>
+    <hr>
+    <p class="wow flip">Lorem ipsum dolor sit amet, case soluta laoreet duo in, epicurei perpetua petentium duo an. Viderer legendos volutpat et has, ea per commune temporibus suscipiantur. Rebum reformidans delicatissimi eu mei, mea velit iusto scripserit an. Pro ad atqui imperdiet, eum numquam fabulas in, fabulas percipit eu pri.</p>
+
+</div> <!-- end of right col -->
+</div> <!-- end of row 4 -->
+
+<!-- row 5 -->
+<div class="row">
+    <!-- col 1 -->
+    <div class="col-xs-12      
+                col-sm-4
+                col-md-4
+                col-lg-4">
+        <h3 class="text-center"> Table title </h3>
+        <table class="table table-hover">
+            <tr>
+                <th>Title 1</th>
+                <th>Title 1</th>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+            </tr>
+           <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+            </tr>   
+        </table>
+                </div> <!-- end of col 1 -->
+    <!-- col 2 -->
+    <div class="col-xs-12      
+                col-sm-4
+                col-md-4
+                col-lg-4">
+
+                <div class="embed-responsive
+                            embed-responsive-4by3"> 
+                    <iframe src="https://goo.gl/bFPEKF"
+                        class="responsive-embed-item"></iframe>
+                </div>
+                </div> <!-- end of col 2 -->
+    <!-- col 3 -->
+    <div class="col-xs-12      
+                col-sm-4
+                col-md-4
+                col-lg-4">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <i class="fa fa-telegram -fa-fw"></i> one
+            </a>
+            <a href="#" class="list-group-item">
+                <i class="fa fa-telegram -fa-fw"></i>two
+            </a>
+            <a href="#" class="list-group-item"> 
+                <i class="fa fa-telegram -fa-fw"></i>three
+            </a>
+        </div>
+                </div> <!-- end of col 3 -->
+
+</div> <!-- end of row 5 -->
+        <hr>
+        <!-- row 6 -->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12"> 
+                <ul class="list-inline text-center">
+                    <li>
+                    <a href="#"><i class="fa fa-telegram fa-2x"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-telegram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-telegram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-telegram fa-2x"></i></a></li>
+                </ul> 
+            </div>
+        </div> <!-- end of row 6 -->
+</div> <!-- end of container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- wow.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<!-- command to initalise wow.js -->
+<script>new WOW().init();</script>
+</body>
+</html>
