@@ -1,0 +1,10 @@
+/*template.css*/
+
+.jumbotron{
+    background-image: url('https://cdn.shopify.com/s/files/1/1626/3733/files/FullSizeRender_10.jpg?4205521323919186855');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20% 20%;
+    min-height: 900px;
+}

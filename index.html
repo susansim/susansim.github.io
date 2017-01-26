@@ -1,76 +1,254 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- 1. Set your page title -->
-    <title>Meet Fara</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- THEMES MUST BE AFTER BOOTSTRAP CSS -->
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+   <!--  <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+<!--     <link rel="stylesheet" type="text/css" href="theme5.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="NEW THEME.css"> -->
+    <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
-    <link href="stylesheet/index.css" rel="stylesheet" type="text/css">
+    
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+/*    .container{border: 2px dotted green;}
+    .row{border: 1px dotted red;}
+    .row [class*=' col-']{border: 2px dotted purple;}*/
+    </style>
+    <link href="stylesheet/template.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row flex-items-xs-middle flex-items-xs-center flex-items-md-right my-full-height">
-            <div class="col-xs-10 col-md-6 col-lg-4 flex-xs-middle my-intro-panel">
-                
-                <!-- 1. insert your name here -->
-                <h1 class="display-1">Meet Susan</h1>
-                <!-- 2. what are you? -->
-                <h6>Susan is the founder of hellopenang.com. </h6>
-                <hr class="my-thick-hr">
-                <!-- 3. short description about yourself -->
-                <p>
-                    Hello Penang brings authentic Penang sauces to your doorstep. Warning: We may cause an intense desire to eat.
-                </p>
-                <dl>
-                   <dt><i class="fa fa-envelope-open-o"></i> email</dt> 
-                   <!-- 4. your public email -->
-                   <dd>susan.sim@hellopenang.com</dd>
-                   <dt><i class="fa fa-phone"></i> phone</dt> 
-                   <!-- 5. your contact number -->
-                   <dd>+65 9456 3048</dd>
-               </dl>
-               <hr class="my-thin-hr">
+    
+    <!-- everything will be in this container --> 
 
-               <!-- 6. change the action url to your Google App address -->
-               <form method="post" action="https://script.google.com/macros/s/AKfycbzp47k3uswXEg1afBPBBnQxMlxnvDYeTSwI8t0b1JxwBCaAAMmv/exec">
-                    <fieldset>
-                        <legend>Contact Me</legend>
-                        <div class="form-group">
-                            <label for="name-id">
-                                name
-                            </label>
-                            <input type="text" name="NAME" id="name-id" class="form-control my-input" required>
-                        </div>
+<div class="container">
+    <!-- start of row 1: jumbotron-->
+    <div class="row">
+        <!-- start of col 1  -->
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12"> 
 
-                        <div class="form-group">
-                            <label for="email-id">
-                                email
-                            </label>
-                            <input type="email" name="EMAIL" id="email-id" class="form-control my-input" required>
-                        </div>
+            <div class="jumbotron">
+            <img src="https://cdn.shopify.com/s/files/1/1626/3733/files/For_FB_Hello_Penang_logo.png?630922942516297876" alt="main image" height="180px">       
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a class="btn btn-danger btn-lg" href="https://www.hellopenang.com/collections/little-nyonya" role="button">Buy our sauces</a>
+             </div> <!-- end of jumbotron -->
+        </div> <!-- end of col 1 -->
+    </div> <!-- end of row 1-->
 
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-default my-btn form-control" id="submit-id">submit</button>
-                            
-                            <div class="alert alert-danger alert-dismissible fade in" hidden id="alert-id">
-                                <button type="button" class="close" id="close-id">
-                                    <span>&times;</span>
-                                </button>
-  
-                                Thank you! I will get in touch.
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-
-            </div>
+    <!-- start of row 2: thumbnails -->
+    <div class="row"> 
+        <!-- start of col 1 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+        <div class="thumbnail"> 
+        <img src="https://cdn.shopify.com/s/files/1/1626/3733/files/dreamstime_m_13578442.jpg?630922942516297876" alt=""> 
+        <div class="caption"> 
+        <h3>Penang Assam Laksa</h3>
+        <p>Savour the authentic taste of Penang's signature Assam Laksa</p>
+        <a href="https://www.hellopenang.com/products/penang-assam-laksa-paste-1" class="btn btn-danger btn-sm">Read more</a>
+        </div> 
         </div>
-    </div>
+        </div> <!-- end of col 1  -->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/tether/1.4.0/tether.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
+        <!-- start of col 2 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+        <div class="thumbnail"> 
+        <img src="https://cdn.shopify.com/s/files/1/1626/3733/files/IMG_9972.png?630922942516297876" alt=""> 
+        <div class="caption"> 
+        <h3>Sambal Salad</h3>
+        <p>Use our Sambal Ikan Bilis sauce to make a delicious salad!</p>
+        <a href="https://www.hellopenang.com/products/sambal-ikan-bilis-paste" class="btn btn-danger btn-sm">Read more</a>
+        </div>  
+        </div>
+        </div> <!-- end of col 2  -->
+        <!-- start of col 3-->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+        <div class="thumbnail"> 
+        <img src="https://cdn.shopify.com/s/files/1/1626/3733/files/IMG_9875_edit2resized.jpg?630922942516297876" alt=""> 
+        <div class="caption"> 
+        <h3>Recipe Blog</h3>
+        <p>Watch video recipes using our sauces and read more in our blog.</p>
+        <a href="https://www.hellopenang.com/blogs/recipes/sambal-salad" class="btn btn-danger btn-sm">Read more</a>
+        </div> 
+        </div>
+        </div> <!-- end of col 3  -->
+    </div> <!-- end of row 2 -->
+
+    <hr>
+    <!-- start of row 3: video -->
+    <div class="row">
+    <!-- start of full screen single column     --> 
+    <div class="col-xs-12
+                col-sm-12
+                col-md-12
+                col-lg-12">
+    <!-- responsive video -->
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/KTyCbbFQcfI" frameborder="0" allowfullscreen"></iframe>
+    </div>
+    </div> <!-- end of full screen single column  -->
+    </div> <!-- end of row 3 -->
+
+    <hr>
+
+    <div class="row"><!-- row 4: forms -->
+        <!-- half screen width -->
+        <div class="col-xs-12 
+                    col-sm-6 
+                    col-md-6 
+                    col-lg-6"> 
+
+            <form action="https://script.google.com/macros/s/AKfycbzp47k3uswXEg1afBPBBnQxMlxnvDYeTSwI8t0b1JxwBCaAAMmv/exec" method="post">
+
+                <legend>Sign up for our newsletter</legend>
+
+                <div class="form-group">
+                   <input type="text"
+                   name="NAME"
+                    placeholder="name"
+                    id="userid"
+                    class="form-control">
+                    <div class="alert alert-danger hidden" id="name-error-id">requires minimum 4 characters</div> 
+                </div>
+
+                <div class="form-group">
+                   <input type="email"
+                    name="EMAIL"
+                    id="email-id"
+                    placeholder="email" 
+                    class="form-control"> 
+                </div>
+
+                <div class="radio">
+                <label><input type="radio" name="gender" value="male">Male</label>
+
+                </div>
+                <div class="radio">
+                <label><input type="radio" name="gender" value="female">Female</label>
+
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"
+                               name="PDPA"
+                               value="agree"
+                               id="cb-id">
+                        I agree to the terms 
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary">
+                </div> 
+            </form>
+        </div>
+    <!-- end of left col -->
+
+<div class="col-xs-12
+            col-sm-6
+            col-md-6
+            col-lg-6
+            text-center">
+    <h1>Authentic ready-to-cook sauces from Penang</h1>
+    <hr>
+    <p>We import and distribute Penang’s quality food products. Based in Singapore, Hello Penang’s main product is currently ready-to-cook Little Nyonya sauces which also retail throughout Australia, United Kingdom, Canada and the USA. Buy our sauces online or find them in retail supermarkets and grocery stores throughout Singapore. </p>
+
+</div> <!-- end of right col -->
+</div> <!-- end of row 4 -->
+
+<!-- row 5 -->
+<div class="row">
+    <!-- col 1 -->
+    <div class="col-xs-12      
+                col-sm-6
+                col-md-6
+                col-lg-6">
+
+                <div class="embed-responsive
+                            embed-responsive-4by3"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.804975949893!2d103.84915731410334!3d1.291364362121883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a727fd017d%3A0x31d87793f23a6906!2s1+Coleman+St%2C+Singapore+179803!5e0!3m2!1sen!2ssg!4v1485344247668" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"
+                        class="responsive-embed-item"></iframe>
+                </div>
+                </div> <!-- end of col 1 -->
+    <!-- col 2 -->
+    <div class="col-xs-12      
+                col-sm-6
+                col-md-6
+                col-lg-6">
+        <div class="list-group">
+        <h1>Contact  Us</h1>
+            <a href="#" class="list-group-item">
+                <i class="fa fa-telegram -fa-fw"></i> hello@hellopenang.com
+            </a>
+            <a href="#" class="list-group-item">
+                <i class="fa fa-phone -fa-fw"></i> +65 9664 8810 
+            </a>
+            <a href="#" class="list-group-item"> 
+                <i class="fa fa-map-marker -fa-fw"></i> 1 Coleman Street, The Adelphi #10-06, S179803
+            </a>
+        </div>
+                </div> <!-- end of col 2 -->
+
+</div> <!-- end of row 5 -->
+        <hr>
+        <!-- row 6 -->
+        <div class="row">
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12"> 
+                <ul class="list-inline text-center">
+                    <li><a href="https://www.instagram.com/hellopenang/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/sayhellopenang/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://in.pinterest.com/hellopenang/"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                </ul> 
+            </div>
+        </div> <!-- end of row 6 -->
+</div> <!-- end of container -->
+
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- wow.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<!-- command to initalise wow.js -->
+<script>new WOW().init();</script>
+
+<script type="text/javascript" src="javascript/page.js"></script>
 </body>
 </html>
